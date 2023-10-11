@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="logo">
+        <img src="images/logo.svg" alt="logo">
+    </div>
+    
+    <div id="calculator">
+        <div id="first-half">
+            <div id="bill-box">
+                <label for="bill-input">Bill</label>
+                <input type="number" id="bill-input">
+            </div>
+    
+            <h3 id="tip-percent">Select Tip %</h3>
+    
+            <div class="tips">
+                <button class="tip-button">5%</button>
+                <button class="tip-button">10%</button>
+                <button class="tip-button">15%</button>
+                <button class="tip-button">25%</button>
+                <button class="tip-button">50%</button>
+                <input placeholder="Custom" id="custom">
+            </div>
+    
+            <div id = "people-container">
+                <div id="error-styling">
+                    <label for="people-input">Number of People</label>
+                    <p id="error">Can't be zero</p>
+                </div>
+                <input type="number" id="people-input">
+            </div>
+        </div>
+        
+        <div id="second-half">
+            <div class="results">
+                <div class="tip">
+                    <p>Tip Amount <br> <span>/person:</span></p>
+                    <h2 id="tip-result">$0.00</h2>
+                </div>
+        
+                <div class="total">
+                    <p>Total <br> <span>/person:</span></p>
+                    <h2 id="total-result">$0.00</h2>
+                </div>
+    
+                <button id="reset-button">RESET</button>
+        
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
